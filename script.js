@@ -5,28 +5,12 @@ TweenMax.to(".loading-screen", 4, {
 });
 
 
-TweenMax.from(".contact", 3, {
-    delay: 8.5,
-    opacity: 0,
-    y: 20,
-    ease: Expo.easeInOut
-});
-
-
 TweenMax.from(".copyright", 3, {
     delay: 8.9,
     opacity: 0,
     y: 20,
     ease: Expo.easeInOut
 });
-
-TweenMax.staggerFrom(".media ul li", 2, {
-    delay: 8.7,
-    opacity: 0,
-    y: 20,
-    ease: Power3.easeInOut
-}, 0.1);
-
 
 TweenMax.from(".p1", 3, {
     delay: 9,
@@ -41,6 +25,7 @@ TweenMax.from(".p2", 3, {
     y: 20,
     ease: Expo.easeInOut
 });
+
 
 TweenMax.from("#one", 3, {
     delay: 9.4,
@@ -78,12 +63,12 @@ t1.from(".ringOne", 4, {
     ease: Expo.easeInOut
 },"-=5");
 
-var textWrapper = document.querySelector('.ml7 .letters');
+var textWrapper = document.querySelector('.name .letters');
 textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
 
 anime.timeline({loop: false})
 .add({
-targets: '.ml7 .letter',
+targets: '.name .letter',
 translateY: ["1.1em", 0],
 translateX: ["0.55em", 0],
 translateZ: 0,
