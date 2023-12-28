@@ -34,12 +34,6 @@ TweenMax.from("#one", 3, {
     ease: Expo.easeInOut
 });
 
-TweenMax.from("#two", 3, {
-    delay: 9.7,
-    opacity: 0,
-    y: 20,
-    ease: Expo.easeInOut
-});
 
 var t1 = new TimelineMax();
 
